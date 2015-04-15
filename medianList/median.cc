@@ -8,9 +8,7 @@
 
 inline void MedianList::pushMaxHeap(int& value)
 {
-    heapBucket.value  = value;
-    heapBucket.index  = map[value].Vector.size();
-    handler.maxH = maxHeap.push(heapBucket);
+    handler.maxH = maxHeap.emplace(value,map[value].Vector.size());
     handler.f = 0;
     iter1 = map.emplace(value,handler);
     if (!iter1.second)
@@ -21,9 +19,7 @@ inline void MedianList::pushMaxHeap(int& value)
 
 inline void MedianList::pushMinHeap(int& value)
 {
-    heapBucket.value  = value;
-    heapBucket.index  = map[value].Vector.size();
-    handler.minH = minHeap.push(heapBucket);
+    handler.minH = minHeap.emplace(value,map[value].Vector.size());
     handler.f = 1;
     iter1 = map.emplace(value,handler);
     if (!iter1.second)
