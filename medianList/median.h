@@ -72,7 +72,6 @@ class MedianList
         float median;
         MaxHeap maxHeap;
         MinHeap minHeap;
-        HeapBucket heapBucket;
         HashProfit map;
         itExtended iter1;
         VectorIter iter2;
