@@ -14,6 +14,9 @@ struct HeapBucket
 {
     int value;
     unsigned int index;
+
+    HeapBucket() {}
+    HeapBucket(int value,unsigned int index) : value(value), index(index) {}
 };
 
 /* comparison functor (similar to less) to provide for MaxHeap */
