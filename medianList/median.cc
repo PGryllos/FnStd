@@ -30,19 +30,17 @@ inline void MedianList::pushMinHeap(int& value)
 
 inline void MedianList::balanceL()
 {
-    heapBucket = minHeap.top();
-    handler.maxH = maxHeap.push(heapBucket);
+    handler.maxH = maxHeap.push(minHeap.top());
     handler.f = 0;
-    map[heapBucket.value].Vector[heapBucket.index] = handler;
+    map[minHeap.top().value].Vector[minHeap.top().index] = handler;
     minHeap.pop();
 }
 
 inline void MedianList::balanceR()
 {
-    heapBucket = maxHeap.top();
-    handler.minH = minHeap.push(heapBucket);
+    handler.minH = minHeap.push(maxHeap.top());
     handler.f = 1;
-    map[heapBucket.value].Vector[heapBucket.index] = handler;
+    map[maxHeap.top().value].Vector[maxHeap.top().index] = handler;
     maxHeap.pop();
 }
 
