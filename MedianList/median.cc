@@ -1,6 +1,9 @@
-/*
- * median.cc
- * Author: Gryllos Prokopis
+/* MedianList
+ *
+ * Copyright(c) 2015 Gryllos Prokopis
+ *
+ * hosted on: https://github.com/PGryllos
+ *
  */
 
 #include "median.h"
