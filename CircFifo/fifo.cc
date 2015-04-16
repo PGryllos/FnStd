@@ -19,7 +19,7 @@ T1& CircFifo<T1>::front(void) const
 template< typename T1 >
 T1& CircFifo<T1>::push_back(T1& fifObject_)
 {
-    if (tail != FIFO_SIZE-1)
+    if (tail != arraySize - 1)
     {
         tail++;
     }
@@ -41,7 +41,7 @@ bool CircFifo<T1>::pop(void)
         tail = -1;
         return true;
     }
-    else if (head != FIFO_SIZE-1)
+    else if (head != arraySize - 1)
     {
         head++;
     }
@@ -59,7 +59,7 @@ int CircFifo<T1>::size(void) const
     int size = tail - head + 1;
     if (size<0)
     {
-        size = tail + FIFO_SIZE - head + 1;
+        size = tail + arraySize - head + 1;
     }
     return size;
 }
