@@ -1,6 +1,9 @@
-/* 
- * fifo.cc
- * Author: Prokopis 
+/* CircFifo
+ *
+ * Copyright(c) 2015 Gryllos Prokopis
+ *
+ * hosted on: https://github.com/PGryllos
+ *
  */
 
 #include "fifo.h"

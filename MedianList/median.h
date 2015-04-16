@@ -82,6 +82,7 @@ class MedianList
         itExtended iter1;
         VectorIter iter2;
         Handle_t handler;
+
         /* helper functions */
         void pushMaxHeap(int& value);
         void pushMinHeap(int& value);
@@ -90,8 +91,9 @@ class MedianList
         void balance();
         void updateMedian();
     public:
-        /* medianList interface */
         MedianList() : median(0) {}
+
+        /* medianList interface */
         float getMedian(); //returns median of MedianList
         void insert(int& value); //inserts value in MedianList,
         void remove(int& value); //removes value from MedianList,
