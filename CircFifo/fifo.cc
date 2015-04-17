@@ -6,7 +6,6 @@
  *
  */
 
-#include "fifo.h"
 
 /* returns a reference to the oldest element in the fifo */
 template< typename T1 >

@@ -99,4 +99,6 @@ class MedianList
         void remove(int& value); //removes value from MedianList,
 };
 
+#include "median.cc"
+
 #endif // _MEDIAN_H

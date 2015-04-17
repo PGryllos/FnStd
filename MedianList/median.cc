@@ -6,8 +6,6 @@
  *
  */
 
-#include "median.h"
-
 
 inline void MedianList::pushMaxHeap(int& value)
 {
