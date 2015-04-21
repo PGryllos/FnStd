@@ -14,9 +14,9 @@ clock_t insertTime = 0, deleteTime = 0, starting_time;
 
 void printAverageTime()
 {
-    cout<<"Average insertion time: "
+    cout<<"Average insertion time for MedianList: "
         <<((double)insertTime/ITER)/CLOCKS_PER_SEC<<endl;
-    cout<<"Average deletion time: "
+    cout<<"Average deletion time for MedianList: "
         <<((double)deleteTime/ITER)/CLOCKS_PER_SEC<<endl;
 }
 

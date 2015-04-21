@@ -52,7 +52,7 @@ class MedianList
         /* Handle_t will be used to find data types of objects to be removed */
         struct Handle_t
         {
-            int f; //boolean variable to find whick type is active (if 0->heap1)
+            int f; //boolean variable to find which type is active (if 0->heap1)
             MaxHeap::handle_type maxH;
             MinHeap::handle_type minH;
         };
@@ -74,7 +74,7 @@ class MedianList
 
         };
 
-        typedef std::map<int, FastVector> HashProfit;
+        typedef boost::unordered_map<int, FastVector> HashProfit;
         typedef std::pair<HashProfit::iterator,bool> itExtended;
 
 
