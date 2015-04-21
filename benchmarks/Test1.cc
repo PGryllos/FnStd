@@ -4,6 +4,7 @@
 
 #include "../MedianList/median.h"
 #include "../CircFifo/fifo.h"
+#include "../TopX/topX.h"
 
 #define ITER 300000
 
@@ -28,6 +29,7 @@ int main (void)
 
     srand (time(NULL));
     MedianList container;
+    topTen_ topTen;
 
     /* Insert values to container and calculate insertion time */
     for (int i=0; i<ITER; i++)
@@ -40,9 +42,18 @@ int main (void)
         container.insert(r);
 
         insertTime += clock() - starting_time;
+
+        topTen.insert(r);
+        cout<<">>Top TentopTen<<"<<endl;
+        for (int i=0; i<10; i++)
+        {
+            cout<<"      "<<topTen.ten[i]<<" ";
+            cout<<endl;
+        }
     }
 
     cout<<"median: "<<container.getMedian()<<endl;
+
 
     /* Delete all values from container and calculate deletion time */
     do
