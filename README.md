@@ -1,2 +1,2 @@
 # asap
-a collaboration of fast advanced non-standard data structures
+a collection of fast advanced non-standard data structures
