@@ -10,4 +10,4 @@ content
 [[MedianList](https://github.com/PGryllos/FnStd/tree/master/MedianList)]  - Calculates the streaming median of a set of integers. For doing that it uses two Fibonacci Heaps.
 Inserting to MedianList complexity analysis : 1 lookup to boost Unordered Map (O(c) c is the number of collisions for a specific key) + 1 push_back operation to a boost Vector (O(1)) + 1 push to a Fibonacci Heap (O(1)).
 
-credits to [stackoverflow user](to http://stackoverflow.com/users/448810/user448810) from whom I saw the two heap solution for the running median problem.
+credits to [stackoverflow user](http://stackoverflow.com/users/448810/user448810) from whom I saw the two heap solution for the running median problem.
