@@ -8,6 +8,7 @@ If you want to use this repository you need to have C++11 or above. You also nee
 content
 --
 [[MedianList](https://github.com/PGryllos/FnStd/tree/master/MedianList)]  - Calculates the streaming median of a set of integers. For doing that it uses two Fibonacci Heaps.
+
 Inserting to MedianList complexity analysis : 1 lookup to boost Unordered Map (O(C) C is the number of collisions for a specific key) + 1 push_back operation to an std vector (O(1)) + 1 push to a Fibonacci Heap (O(1)).
 
 Deletion from MedianList complexity analysis: 1 lookup to boost Unordered Map (O(C)) + 1 deletion from Boost Fibonacci Heap (O(logN) N is the number of elements in the MedianLists) + 1 pop_back operation from std vector (O(1)).
