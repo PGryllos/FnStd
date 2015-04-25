@@ -15,6 +15,6 @@ Deletion from MedianList complexity analysis: 1 lookup to boost Unordered Map (O
 
 [[CircFifo](https://github.com/PGryllos/FnStd/tree/master/CircFifo)] - Circular Queue implemented only with static array.
 
-[[TopX](https://github.com/PGryllos/FnStd/tree/master/TopX] - Keeps ten highest values in static array. All other values are stores in a Fibonacci Heap.  
+[[TopX](https://github.com/PGryllos/FnStd/tree/master/TopX)] - Keeps ten highest values in static array. All other values are stores in a Fibonacci Heap.  
 
 credits to [stackoverflow user](http://stackoverflow.com/users/448810/user448810) from whom I saw the two heap solution for the running median problem.
