@@ -57,15 +57,12 @@ class MedianList
             MinHeap::handle_type minH;
         };
 
-        typedef boost::container::vector<Handle_t> BoostVector;
-        typedef BoostVector::iterator VectorIter;
-
 
         /* FastVector is a wrapper of boost vector that pushes the first element upon
            creation. It will be used to store Handle_t objects */
         struct FastVector
         {
-            BoostVector Vector;
+            std::vector<Handle_t> Vector;
             FastVector() {}
             FastVector(const Handle_t& handler)
             {
@@ -84,7 +81,6 @@ class MedianList
         MinHeap minHeap;
         HashProfit map;
         itExtended iter1;
-        VectorIter iter2;
         Handle_t handler;
 
         /* helper functions */
