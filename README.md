@@ -17,12 +17,12 @@ Deletion from MedianList complexity analysis: 1 lookup to boost Unordered Map (O
 
 [[TopX](https://github.com/PGryllos/FnStd/tree/master/TopX)] - Keeps ten highest values in static array. All other values are stores in a Fibonacci Heap.
 
-TODO LIST
+#TODO LIST
 --
 
-Make MedianList and TopX type independent (templates)<br>
-Implement remove method for TopX<br>
-Benchmark medianList (use std list for the same purpose and compare)<br>
+* Make MedianList and TopX type independent (templates)<br>
+* Implement remove method for TopX<br>
+* Benchmark medianList (use std list for the same purpose and compare)<br>
 
 
-credits to [stackoverflow user](http://stackoverflow.com/users/448810/user448810) from whom I saw the two heap solution for the running median problem.
+credits to [stackoverflow user](http://stackoverflow.com/users/448810/user448810) from whom I saw the two heap solution for the running median problem  [here](http://stackoverflow.com/a/10931091/4068678).
