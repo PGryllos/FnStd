@@ -44,17 +44,17 @@ int main (void)
         insertTime += clock() - starting_time;
 
         topTen.insert(r);
-        cout<<">>Top TentopTen<<"<<endl;
-        for (int i=0; i<10; i++)
-        {
-            cout<<"      "<<topTen.ten[i]<<" ";
-            cout<<endl;
-        }
     }
 
     cout<<"median: "<<container.getMedian()<<endl;
 
 
+    cout<<">>Top TentopTen<<"<<endl;
+    for (int i=0; i<10; i++)
+    {
+        cout<<"      "<<topTen.ten[i]<<" ";
+        cout<<endl;
+    }
     /* Delete all values from container and calculate deletion time */
     do
     {
