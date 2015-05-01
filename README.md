@@ -19,7 +19,7 @@ If you want to use this repository you need to have C++11 or above. You also nee
 
 [[CircFifo](https://github.com/PGryllos/FnStd/tree/master/CircFifo)]<br>Circular Queue implemented only with static array.
 
-[[TopX](https://github.com/PGryllos/FnStd/tree/master/TopX)]<br>Keeps ten highest values in static array. All other values are stores in a Fibonacci Heap.
+[[TopX](https://github.com/PGryllos/FnStd/tree/master/TopX)]<br>Keeps ten highest values in static array. All other values are stored in a Fibonacci Heap.
 
 
 TODO LIST
