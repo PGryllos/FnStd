@@ -5,11 +5,9 @@ This is a collection of Data Structures which you will not find in STL.That's wh
 
 
 #### requirements
-
 If you want to use this repository you need to have C++11 or above. You also need BOOST Library.
 
-### content
---
+#### content
 [[MedianList](https://github.com/PGryllos/FnStd/tree/master/MedianList)]<br>Calculates the streaming median of a set of integers. For doing that it uses two Fibonacci Heaps and a hashtable.
 
 <b>Inserting to MedianList complexity analysis</b><br>1 lookup to boost Unordered Map (O(C1) C1 is the number of collisions for a specific key)<br>1 push_back operation to an std vector (O(C2))<br>1 push to a Fibonacci Heap (O(C3))<br><b>-> O(C1) + O(C2) + O(C3)</b>
