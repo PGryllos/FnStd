@@ -1,6 +1,5 @@
-Fast not Standard Data Structures (FnStd)
------------------------------
-----
+## Fast not Standard Data Structures (FnStd)
+
 
 This is a collection of Data Structures which you will not find in STL.That's what "not Standard" stands for.<br>You can use this code in your own responsibility because it comes with no Warranty!<br>You can use and redistribute without any constraints as the LICENSE suggests.
 
